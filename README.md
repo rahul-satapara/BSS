@@ -117,10 +117,3 @@ We welcome contributions! If you have an idea for a new feature or improvement:
 ---
 
 Made with ❤️ for DFIR, learning, and ethical hacking.
-
-Permission is hereby granted to clone and use the software for educational or research purposes only.
-
-Modification, or reverse engineering of any part of this software is strictly prohibited
-without explicit written permission from the author.
-
-This software is proprietary and protected by applicable copyright laws.
