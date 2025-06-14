@@ -35,13 +35,13 @@
 
 ### 🧪 For Python:
 ```bash
-python bss_clean.py
+python BSS v1.py
 ```
 
 ### ⚙️ For Executable (Optional):
 Convert the script to a standalone `.exe` using PyInstaller:
 ```bash
-pyinstaller --onefile --noconsole bss_clean.py
+pyinstaller --onefile --noconsole BSS v1.py
 ```
 
 ### 📂 Output:
