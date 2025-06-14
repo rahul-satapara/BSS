@@ -8,57 +8,58 @@
 
 ## ✨ Features
 
-* 🔑 Extracts saved login credentials from local browser databases
-
-  * Only works on **older formats** (`v10`) — **newer `v20` encryption is not supported**
-* 🌐 Collects recent browsing history with timestamps
-* 📃 Outputs structured `.txt` files for analysis
-* 📦 Compresses all extracted data into a `.zip` archive (non-password protected)
-* ✅ Compatible with:
-
-  * Google Chrome
-  * Microsoft Edge
-  * Brave Browser
+- 🔐 Extracts saved passwords from local databases (only for legacy formats using `v10` encryption)
+- 🌍 Collects browser history with visited and searched URLs
+- 📄 Saves data into easy-to-read `.txt` files
+- 🗜️ Compresses all results into a `.zip` archive named `results_<timestamp>.zip`
+- 🧹 Automatically deletes temporary folders after zipping
+- 💡 Supports:
+  - Google Chrome
+  - Microsoft Edge
+  - Brave Browser
 
 ---
 
-## 🛠 Requirements
+## 📦 Requirements
 
-* Windows OS
-* Python 3.8+
-* Python packages:
-
+- Windows OS (with Chromium-based browsers installed)
+- Python 3.8 or higher
+- Install required libraries:
   ```bash
-  pip install pycryptodome pytz
+  pip install pycryptodome pytz pypiwin32
   ```
 
 ---
 
 ## 🚀 Usage
 
-1. **Clone or download** this repository
-2. **Run the script**:
+### 🧪 For Python:
+```bash
+python bss_clean.py
+```
 
-   ```bash
-   python bss_clean.py
-   ```
-3. **Output will be saved as**:
+### ⚙️ For Executable (Optional):
+Convert the script to a standalone `.exe` using PyInstaller:
+```bash
+pyinstaller --onefile --noconsole bss_clean.py
+```
 
-   ```
-   extracted_data/
-     ├── chrome_key20250614_123045.txt
-     ├── chrome_log20250614_123045.txt
-     ├── edge_key20250614_123045.txt
-     ├── ...
-     └── results_20250614_123045.zip
-   ```
+### 📂 Output:
+```
+results_20250614_153045.zip
+```
+The zip will contain files like:
+```
+chrome_passwords_20250614_153045.txt
+chrome_history_20250614_153045.txt
+...
+```
 
 ---
 
-## 📁 Output Format
+## 📁 File Format
 
-### Passwords file:
-
+### Passwords
 ```
 [Site] https://example.com
 [Username] user@example.com
@@ -88,11 +89,34 @@ This tool is for:
 
 ---
 
-## 📃 License
+## 🧾 License
 
-Copyright (c) 2025 rahul-satapara
+This project is licensed under the **MIT License**. See the `LICENSE` file for full details.
 
-All rights reserved.
+You're welcome to fork and build on it. Always act **ethically** and **legally**.
+
+---
+
+## 🤝 Contributions
+
+We welcome contributions! If you have an idea for a new feature or improvement:
+1. Fork the repo
+2. Create a new branch
+3. Submit a Pull Request (PR)
+
+> All contributions will be reviewed before merging.
+
+---
+
+## ⚠️ Disclaimer
+
+> ❌ **Never run this tool on machines or user profiles you do not own or have explicit permission to analyze.**
+> 
+> The developers are not responsible for any misuse.
+
+---
+
+Made with ❤️ for DFIR, learning, and ethical hacking.
 
 Permission is hereby granted to clone and use the software for educational or research purposes only.
 
