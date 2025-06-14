@@ -10,9 +10,7 @@
 
 - 🔐 Extracts saved passwords from local databases (only for legacy formats using `v10` encryption)
 - 🌍 Collects browser history with visited and searched URLs
-- 📄 Saves data into easy-to-read `.txt` files
 - 🗜️ Compresses all results into a `.zip` archive named `results_<timestamp>.zip`
-- 🧹 Automatically deletes temporary folders after zipping
 - 💡 Supports:
   - Google Chrome
   - Microsoft Edge
